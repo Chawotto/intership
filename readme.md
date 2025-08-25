@@ -39,6 +39,6 @@ TASK 1.3 "Процессы, systemd и cron"
 - Запустить утилиту ping, вывести запущенный процесс в background, проверить, что процесс находится в фоновом режиме, вернуть процесс в foreground. Остановить процесс, после чего удалить его. 
 - Используемые команды должны быть записаны в отдельный файлик.
 
-  [ Использованные команды (1.3)](https://github.com/Chawotto/intership/blob/67619965be521f63321cfbd4ffe464b8babceb52/Section%201.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20Linux/task%201.3/Used%20commands.txt)
+  [ Использованные команды (1.3)](https://github.com/Chawotto/intership/tree/784ce7c1921d969d687e12a18aea39e3b2c8f035/Section%201.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20Linux/task%201.3)
   
 Расчетное время: 4 рабочих дня. Время выполнения: 1.5 часа.
