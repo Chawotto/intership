@@ -10,7 +10,7 @@
 - Создать на своей хостовой машине файл, после чего прокинуть его на инстанс с помощью scp. 
 - Используемые команды должны быть записаны в отдельный файлик.
   
-  [ Использованные команды (1.1)]([https://github.com/Chawotto/java-algorythm/tree/103404665159449661dd370bf0768b717ba5a987/%D0%9E%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D0%B8_%D1%81%D1%82%D0%B5%D0%BA%D0%B8_%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D1%8B/1/src/main/java/org/example](https://github.com/Chawotto/intership/blob/419409f88ad27676cccc9c5a66047709cebacf10/Section%201.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20Linux/task%201.1/Used%20commands.txt))
+  [ Использованные команды (1.1)](https://github.com/Chawotto/intership/blob/419409f88ad27676cccc9c5a66047709cebacf10/Section%201.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20Linux/task%201.1/Used%20commands.txt)
 
 Расчетное время: 3 рабочих дня. Время выполнения: 1 рабочий день.
 
