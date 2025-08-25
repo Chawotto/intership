@@ -1,0 +1,21 @@
+sudo adduser raymond
+sudo adduser john
+
+sudo apt install openssh-server -y
+sudo nano etc/sshd_config <- "Editing ssh-auth. settings"
+sudo systemctl daemon-reload
+systemctl restart ssh.socket
+
+sudo usermod -aG sudo raymond
+
+echo "something" > document.txt
+chmod 754 document.txt
+
+echo 'Hello from script' > /home/john/script.sh
+chmod +x script.sh
+
+sudo chsh -s /bin/bash john
+sudo adduser givi --shell /bin/sh
+sudo usermod -aG john givi
+
+scp file.txt raymond@"ip":/home/raymond/
