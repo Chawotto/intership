@@ -1,15 +1,20 @@
-df -h | awk 'NR==1 {print $1, $5, $6} NR>1 {print $1, $5, $6}' > ~/disk_sizes.txt
-cat ~/disk_sizes.txt
+sudo nano /usr/local/bin/uptime_logger.sh
+sudo chmod +x /usr/local/bin/uptime_logger.sh
+sudo nano /etc/systemd/system/uptime-logger.service
+sudo systemctl daemon-reload
+sudo systemctl enable uptime-logger.service
+sudo systemctl start uptime-logger.service
+sudo systemctl status uptime-logger.service
 
-sudo du -sh /etc/* | sort -hr | head -n 10 > ~/etc_sizes.txt
-cat ~/etc_sizes.txt
+stress -с 6 -t 120s
 
-awk '/^N[AD][SD]\/A$/' ~/strings.txt > ~/sel_strings.txt
-cat ~/sel_strings.txt
+sudo crontab -e (nano)
+		"*/10 * * * * /bin/systemctl status uptime-logger.service > /var/log/uptime-logger-status.log 2>&1"
+sudo crontab -l
 
-grep '/bin/bash' /etc/passwd | nl > ~/bash_users.txt
-cat ~/bash_users.txt
+ping google.com &
+jobs
+fg
+kill
 
-sudo cp /etc/passwd /etc/passwd.bak
-sudo sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd.bak
-grep '/bin/bash' /etc/passwd.bak
+

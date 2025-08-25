@@ -1,0 +1,22 @@
+#!/bin/bash
+
+LOG_FILE="/var/log/uptime.log"
+OVERLOAD_FILE="/var/log/overload.log"
+
+while true; do
+    UPTIME_OUTPUT=$(uptime)
+    echo "$UPTIME_OUTPUT" >> "$LOG_FILE"
+
+    LOAD_1M=$(uptime | awk '{print $(NF-2)}' | tr -d ',') 
+    if (( $(echo "$LOAD_1M > 1" | bc -l) )); then
+        echo "$UPTIME_OUTPUT" >> "$OVERLOAD_FILE"
+    fi
+
+    OVERLOAD_SIZE=$(du -b "$OVERLOAD_FILE" | awk '{print $1}')
+    if [ "$OVERLOAD_SIZE" -gt 51200 ]; then
+    	> "$OVERLOAD_FILE"  
+    	echo "$(date '+%Y-%m-%d %H:%M:%S') - Overload file cleaned" >> /var/log/cleanup.log
+    fi
+
+    sleep 15
+done
