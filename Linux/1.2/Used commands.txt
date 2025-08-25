@@ -1,0 +1,15 @@
+df -h | awk 'NR==1 {print $1, $5, $6} NR>1 {print $1, $5, $6}' > ~/disk_sizes.txt
+cat ~/disk_sizes.txt
+
+sudo du -sh /etc/* | sort -hr | head -n 10 > ~/etc_sizes.txt
+cat ~/etc_sizes.txt
+
+awk '/^N[AD][SD]\/A$/' ~/strings.txt > ~/sel_strings.txt
+cat ~/sel_strings.txt
+
+grep '/bin/bash' /etc/passwd | nl > ~/bash_users.txt
+cat ~/bash_users.txt
+
+sudo cp /etc/passwd /etc/passwd.bak
+sudo sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd.bak
+grep '/bin/bash' /etc/passwd.bak
