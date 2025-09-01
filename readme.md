@@ -64,3 +64,27 @@ TASK 1.5 "Nginx. Round Robin"
   [ Директория с файлами задачи (1.5)](https://github.com/Chawotto/intership/tree/90c7de972f860bc506b71b7efe522c6c95b93aff/Section%201.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20Linux/task%201.5)
 
 Расчетное время: - . Время выполнения: 3 часа.
+
+TASK 1.6 "Nginx, Apache. Настройка домена, обработка запросов"
+
+- Создать сервер t2.micro(Ubuntu), он должен иметь публичный ip и доступ в интернет. При создании использовать User Data cкрипт(приложен ниже). Разрешить http и https трафик в security group, ассоциированной с данным сервером.
+#!/bin/bash
+sudo apt-get update -y
+sudo apt-get install -y nginx
+sudo rm -r /var/www/html/index.nginx-debian.html
+TOKEN=$(curl --request PUT "http://169.254.169.254/latest/api/token" --header "X-aws-ec2-metadata-token-ttl-seconds: 3600")
+LOCAL_IP=$(curl -s http://169.254.169.254/latest/meta-data/local-ipv4 --header "X-aws-ec2-metadata-token: $TOKEN") 
+echo "My private IP is $LOCAL_IP" > index.nginx-debian.html
+sudo systemctl reload nginx
+- Зарегистрироваться на сайте: Free Dynamic DNS - Managed DNS - Managed Email - Domain Registration - No-IP , разобраться в типах DNS записей, сделать DNS записать типа A для созданного сервера. Получить сертификат для своего сервера, используя letsencrypt. Разобраться в цепочках сертификатов. 
+- Установить Nginx на сервер. Написать конфигурацию nginx для обслуживания на 80 и 443 портах. 80 порт должен делать редирект на 443(сайт должен работать только по HTTPS). Веб-сервер должен раздавать /var/www/html/index.nginx-debian.html, который был сгенерирован User Data скриптом.  Проверить работоспособность. При вводе домена в поисковую строку должен выдаваться текст: Welcome to my web server. My private IP is *********. 
+- В следующих чекпоинтах нужно изменять страницу nginx и конфигурационный файл:
+- Клиент нажимает на слово-ссылку, после чего его перенаправляет на html-страницу с картинкой.
+- Клиент нажимает на слово-ссылку, по которой можно скачать файл mp3 с музыкой.
+- Сделать регулярное выражение для отображения картинок(png, jpg). Если формат jpg, то перевернуть картинку с помощью nginx. 
+- Создать второй сервер t2.micro, установить Apache и PHP(fpm), взять за основу info.php файл. Настроить Apache на обслуживание данного файла.
+- Создать слово-ссылку в html-странице, которая будет перенаправлять запрос с Nginx-cервера на Apache-сервер.
+
+  [ Директория с файлами задачи (1.6)]()
+
+Расчетное время: - . Время выполнения: now.
