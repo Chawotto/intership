@@ -1,6 +1,6 @@
 # Содержание:
-Section 1. Основы Linux
-Section 2. Вертим Git
+- Section 1. Основы Linux
+- Section 2. Вертим Git
 
 
 
