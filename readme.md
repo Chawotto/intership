@@ -1,5 +1,5 @@
 # Содержание:
-- Section 1. Основы Linux
+- [Section 1. Основы Linux](https://github.com/Chawotto/intership/blob/main/readme.md#section-1-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-linux)
 - Section 2. Вертим Git
 
 
