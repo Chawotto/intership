@@ -100,8 +100,6 @@ TASK 2.1 "Базовая работа с git-репозиториями"
 - Проверить, что все созданные репозитории публичные, кроме репозитория на devops-gitlab.inno.ws.
 
 Ссылки на репозитори:
-[ Github ](https://github.com/Chawotto/devops-task1)
-[Gitlab](https://devops-gitlab.inno.ws/aliaksandr.yesepionak/devops-task1)
-[Bitbucket](https://bitbucket.org/chawotto/devops-task1/src/main/)
+[ Github ](https://github.com/Chawotto/devops-task1), [Gitlab](https://devops-gitlab.inno.ws/aliaksandr.yesepionak/devops-task1), [Bitbucket](https://bitbucket.org/chawotto/devops-task1/src/main/)
 
 Расчетное время: 2 рабочих дня. Время выполнения: 1.5 часа.
