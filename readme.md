@@ -154,8 +154,6 @@ TASK 2.4 "Rebase, Squash и Cherry-pick"
   
 - Клонируй репозиторий: https://devops-gitlab.inno.ws/****. Перенести коммит "Formatted code" в ветку master. Создай репозиторий в своем аккаунте и залейте туда получившийся репозиторий.
 
-  Ссылки на репозитори:
-
-[Gitlab-rebase](https://devops-gitlab.inno.ws/aliaksandr.yesepionak/git-rebase), [Gitlab-squash](https://devops-gitlab.inno.ws/aliaksandr.yesepionak/git-squash), [Gitlab-cherry-pick](https://devops-gitlab.inno.ws/aliaksandr.yesepionak/git-cherry-pick)
+  Ссылки на репозитори: [Gitlab-rebase](https://devops-gitlab.inno.ws/aliaksandr.yesepionak/git-rebase), [Gitlab-squash](https://devops-gitlab.inno.ws/aliaksandr.yesepionak/git-squash), [Gitlab-cherry-pick](https://devops-gitlab.inno.ws/aliaksandr.yesepionak/git-cherry-pick)
 
 Расчетное время: 2 рабочих дня. Время выполнения: 30 минут.
