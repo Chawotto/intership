@@ -123,8 +123,9 @@ TASK 2.2 "Бранчевание"
 - Добавь файл .gitignore в ветку feature/new-site.  Файл gitignore должен быть составлен таким образом, чтобы исключать из репозитория папку tmp и все ее содержимое. Создай локально папку tmp с несколькими файлами в ней, закоммить изменения.
   
 - Загрузи обе ветки на gitlab. Загрузи тег на хостинг https://devops-gitlab.inno.ws с помощью git push и проверь его наличие.
-
-[Gitlab-branch](https://devops-gitlab.inno.ws/aliaksandr.yesepionak/devops-task1)
+  
+  Ссылки на репозитори:
+  [Gitlab-branch](https://devops-gitlab.inno.ws/aliaksandr.yesepionak/devops-task1)
 
 Расчетное время: 2 рабочих дня. Время выполнения: 40 минут.
 
@@ -138,6 +139,7 @@ TASK 2.3 "Мерж и конфликты"
 
 - Создай в своем аккаунте в gitlab репозиторий devops-task-merge и загрузи все изменения в него.
 
+  Ссылки на репозитори:
   [Gitlab-merge](https://devops-gitlab.inno.ws/aliaksandr.yesepionak/devops-task1](https://devops-gitlab.inno.ws/aliaksandr.yesepionak/devops-task-merge))
 
 Расчетное время: 2 рабочих дня. Время выполнения: 20 минут.
