@@ -124,9 +124,11 @@ TASK 2.2 "Бранчевание"
   
 - Загрузи обе ветки на gitlab. Загрузи тег на хостинг https://devops-gitlab.inno.ws с помощью git push и проверь его наличие.
 
+[Gitlab-branch](https://devops-gitlab.inno.ws/aliaksandr.yesepionak/devops-task1)
+
 Расчетное время: 2 рабочих дня. Время выполнения: 40 минут.
 
-TASK 2.3 "Бранчевание"
+TASK 2.3 "Мерж и конфликты"
 
 - Объедини ветку develop с веткой master из предыдущего задания. Запушь ветку в удаленный репозиторий.
   
@@ -135,6 +137,8 @@ TASK 2.3 "Бранчевание"
 - Смержи получившуюся ветку develop в ветку master. При разрешении конфликта нужно выбрать последнее по времени изменение в ветках develop и master, исключая при сравнении времени только что сделанный merge коммит, который появился в ветке develop после выполнения шага 2.
 
 - Создай в своем аккаунте в gitlab репозиторий devops-task-merge и загрузи все изменения в него.
+
+  [Gitlab-merge](https://devops-gitlab.inno.ws/aliaksandr.yesepionak/devops-task1](https://devops-gitlab.inno.ws/aliaksandr.yesepionak/devops-task-merge))
 
 Расчетное время: 2 рабочих дня. Время выполнения: 20 минут.
 
@@ -147,5 +151,9 @@ TASK 2.4 "Rebase, Squash и Cherry-pick"
 - Создай репозиторий в своем аккаунте и загрузите в него получившийся репозиторий.
   
 - Клонируй репозиторий: https://devops-gitlab.inno.ws/****. Перенести коммит "Formatted code" в ветку master. Создай репозиторий в своем аккаунте и залейте туда получившийся репозиторий.
+
+  Ссылки на репозитори:
+
+[Gitlab-rebase](https://devops-gitlab.inno.ws/aliaksandr.yesepionak/git-rebase), [Gitlab-squash](https://devops-gitlab.inno.ws/aliaksandr.yesepionak/git-squash), [Gitlab-cherry-pick](https://devops-gitlab.inno.ws/aliaksandr.yesepionak/git-cherry-pick)
 
 Расчетное время: 2 рабочих дня. Время выполнения: 30 минут.
