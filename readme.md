@@ -109,3 +109,19 @@ TASK 2.1 "Базовая работа с git-репозиториями"
 [ Github ](https://github.com/Chawotto/devops-task1), [Gitlab](https://devops-gitlab.inno.ws/aliaksandr.yesepionak/devops-task1), [Bitbucket](https://bitbucket.org/chawotto/devops-task1/src/main/)
 
 Расчетное время: 2 рабочих дня. Время выполнения: 1.5 часа.
+
+TASK 2.2 "Бранчевание"
+
+- В репозитории devops-task1, загруженном на хостинг в предыдущем задании, создай с помощью git checkout и git branch две новые ветки: develop и feature/new-site.
+  
+- В ветке develop измени настройки в nginx.conf: замени worker_connections на 16384 и закоммить изменения. В ветке develop измени nginx.conf, включи сжатие ответа для типа application/json и закоммить изменения.
+  
+- В ветке feature/new-site добавь файл conf.d/mysite.domain.com.conf с базовым описанием статического сайта и закоммить изменения.
+  
+- Добавь легковесный тег v0.1 на последний коммит в  ветке{{develop}} (где изменял nginx.conf).
+  
+- Добавь файл .gitignore в ветку feature/new-site.  Файл gitignore должен быть составлен таким образом, чтобы исключать из репозитория папку tmp и все ее содержимое. Создай локально папку tmp с несколькими файлами в ней, закоммить изменения.
+  
+- Загрузи обе ветки на gitlab. Загрузи тег на хостинг https://devops-gitlab.inno.ws с помощью git push и проверь его наличие.
+
+Расчетное время: 2 рабочих дня. Время выполнения: now.
